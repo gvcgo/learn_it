@@ -1,0 +1,43 @@
+---
+title: 欢迎来到Learn it.
+description: 编程有关的线上学习资料、工具、社区论坛资源聚合.
+template: splash
+hero:
+  tagline: 快来开启你的学习探索之旅吧!.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: 快速开始
+      link: /books/books/
+      icon: right-arrow
+      variant: primary
+    - text: 去点亮Star
+      link: https://github.com/gvcgo/learn_it
+      icon: github
+---
+
+
+import { Card, CardGrid, Icon } from '@astrojs/starlight/components';
+
+## 在这里，你能找到哪些内容？
+
+<CardGrid>
+	<Card title="计算机相关基础知识" icon="seti:notebook">
+		包括算法，计算机网络，计算机系统等基础知识。
+	</Card>
+	<Card title="后端相关的基础知识" icon="seti:db">
+		包括MySQL，Redis，MQ(Kafka/RocketMQ)， ElasticSearch，架构等方面的知识.
+	</Card>
+	<Card title="书籍推荐" icon="open-book">
+		筛选出一些比较优秀的书籍进行推荐，规避垃圾书籍，提高学习效率.
+	</Card>
+	<Card title="程序员常去的社区推荐" icon="stackOverflow">
+		推荐一些程序员常去的社区和网站.
+	</Card>
+	<Card title="程序员常用的工具推荐" icon="seti:config">
+		推荐一些程序员常用、好用的工具或者工具网站.
+	</Card>
+	<Card title="日常工具推荐" icon="puzzle">
+		推荐一些好用的工具或者工具网站.
+	</Card>
+</CardGrid>
