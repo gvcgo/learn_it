@@ -1,55 +1,27 @@
-# Starlight Starter Kit: Basics
+## 如何增加自己想要的内容
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+在learn_it/src/docs目录下，每一个文件夹对应一个大类。在文件夹下，每一个mdx文件对应一个小类。
+如果没有为你所提供的资源找到分类，可以自行新建文件夹和mdx文件。
 
-```
-npm create astro@latest -- --template starlight
-```
+新建的mdx文件，可以按照如下方式添加条目(注意不要重复import)：
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+```md
+import { Card, CardGrid, LinkCard, Icon } from '@astrojs/starlight/components';
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+<CardGrid>
+	<Card title="图解Redis By 小林coding" icon="seti:notebook">
+		<LinkCard title="网站" href="https://xiaolincoding.com/redis/" />
+		<LinkCard title="Github" href="https://github.com/xiaolincoder/CS-Base" />
+	</Card>
+</CardGrid>
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## 也可以在issue中提出想要增加的内容
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+想要增加的内容最好是有网站链接的免费公开资源。可以是笔记资料，开源书籍，开源项目，公开课程等等。
+只要是认为对学习计算机科学有帮助的优秀资源，都可以提交issue。
+只要是非常好用的软件工具，尤其是开源工具，也可以提交issue。
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## learn-it的目标
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+Learn-it的目标是收集计算机科学领域优秀的公开资源，并按照一定的分类进行整理，方便大家学习和使用。
