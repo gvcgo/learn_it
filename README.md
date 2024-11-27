@@ -25,3 +25,11 @@ import { Card, CardGrid, LinkCard, Icon } from '@astrojs/starlight/components';
 ## learn-it的目标
 
 Learn-it的目标是收集计算机科学领域优秀的公开资源，并按照一定的分类进行整理，方便大家学习和使用。
+
+## 截图demo
+
+[去到主页](https://go.learnit.us.kg/)
+
+<img src="https://raw.githubusercontent.com/gvcgo/learn_it/refs/heads/main/src/assets/learn_it.png" alt="主页" />
+
+<img src="https://raw.githubusercontent.com/gvcgo/learn_it/refs/heads/main/src/assets/learn_it_content.png" alt="内容" />
