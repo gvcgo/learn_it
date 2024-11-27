@@ -51,6 +51,14 @@ export default defineConfig({
 						{ label: '其他', slug: 'languages/languages' },
 					],
 				},
+				{
+					label: 'DevOps',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'docker', slug: 'devops/docker' },
+						{ label: 'k8s', slug: 'devops/k8s' },
+					],
+				},
 			],
 			defaultLocale: 'root',
 			locales:{
