@@ -48,6 +48,7 @@ export default defineConfig({
 						{ label: 'go相关', slug: 'languages/go' },
 						{ label: 'python相关', slug: 'languages/python' },
 						{ label: 'java相关', slug: 'languages/java' },
+						{ label: 'typescript相关', slug: 'languages/typescript' },
 						{ label: '其他', slug: 'languages/languages' },
 					],
 				},
