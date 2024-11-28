@@ -21,6 +21,7 @@ export default defineConfig({
 						{ label: '计算机基础', slug: 'books/books' },
 						{ label: 'MySQL原理', slug: 'books/mysql' },
 						{ label: 'Redis原理', slug: 'books/redis' },
+						{ label: 'git学习', slug: 'books/git' },
 						{ label: 'Kafka/RocketMQ原理', slug: 'books/kafka' },
 						{ label: 'Elasticsearch原理', slug: 'books/elasticsearch' },
 						{ label: '后端架构', slug: 'books/architecture' },
