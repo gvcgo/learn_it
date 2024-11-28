@@ -2,3 +2,141 @@
 title: Python相关学习资料或者书籍
 description: 一起学习Python.
 ---
+
+import { Card, CardGrid, LinkCard, Icon } from '@astrojs/starlight/components';
+
+## python基础
+
+<CardGrid>
+    <Card title="python官方教程" icon="seti:notebook">
+		教程包括python数据结构，基础语法，常用标准库使用，面向对象等基础知识
+		<LinkCard title="网站" href="https://docs.python.org/zh-cn/3/tutorial/index.html" />
+	</Card>
+    <Card title="python Developer roadmap" icon="seti:notebook">
+		深入学习python的路线参考图，防止迷路
+		<LinkCard title="网站" href="https://roadmap.sh/python" />
+	</Card>
+</CardGrid>
+
+## python进阶
+
+<CardGrid>
+    <Card title="python3 cookbook" icon="seti:notebook">
+		从另一种视角学习python，包含python的各种高级编码技巧
+		<LinkCard title="网站" href="https://python3-cookbook.readthedocs.io/zh-cn/latest/preface.html" />
+	</Card>
+    <Card title="Python进阶" icon="seti:notebook">
+		包含python开发实用技巧，以及编码中容易忽视的细节
+		<LinkCard title="网站" href="https://eastlakeside.gitbook.io/interpy-zh" />
+	</Card>
+    <Card title="Python 并行编程" icon="seti:notebook">
+		python多线程，多进程，异步编程（asyncio），底层原理
+		<LinkCard title="网站" href="https://python-parallel-programmning-cookbook.readthedocs.io/zh-cn/latest/chapter1/index.html" />
+	</Card>
+    <Card title="typing" icon="seti:notebook">
+		支持python类型注解的库，可以帮助开发者在开发过程中减少类型错误
+		<LinkCard title="网站" href="https://docs.python.org/zh-cn/3/library/typing.html" />
+	</Card>
+</CardGrid>
+
+## python底层原理
+
+<CardGrid>
+    <Card title="python源码剖析 by 小菜学编程" icon="seti:notebook">
+		<LinkCard title="网站" href="https://fasionchan.com/python-source/" />
+	</Card>    
+</CardGrid>
+
+## python源码易读的项目
+
+<CardGrid>
+    <Card title="flask源码" icon="seti:notebook">
+        包含很多python语言特性的实践，WSGI Web开发原理学习，代码风格学习
+		<LinkCard title="Github" href="https://github.com/pallets/flask" />
+	</Card>
+    <Card title="gevent源码" icon="seti:notebook">
+        使用greenlet实现python协程，理解python协程
+		<LinkCard title="Github" href="https://github.com/gevent/gevent" />
+	</Card>
+</CardGrid>
+
+## python web开发
+
+<CardGrid>
+    <Card title="flask" icon="seti:notebook">
+		<LinkCard title="Flask文档" href="https://dormousehole.readthedocs.io/en/latest/" />
+        <LinkCard title="Flask-awesome" href="https://github.com/humiaozuzu/awesome-flask" />
+	</Card>
+    <Card title="Django" icon="seti:notebook">
+        基于wsgi的web框架，封装了
+		<LinkCard title="Django文档" href="https://docs.djangoproject.com/zh-hans/5.1/" />
+        <LinkCard title="Django drf文档" href="https://www.django-rest-framework.org/tutorial/quickstart/" />
+        <LinkCard title="Django orm cookbook" href="https://books.agiliq.com/projects/django-orm-cookbook/en/latest/query.html" />
+	</Card>
+    <Card title="Fastapi" icon="seti:notebook">
+        基于asgi的web框架
+		<LinkCard title="文档" href="https://fastapi.tiangolo.com/zh/tutorial/" />
+        <LinkCard title="pydantic文档" href="https://pydantic.com.cn/concepts/models/" />
+	</Card>
+    <Card title="SQLAlchemy" icon="seti:notebook">
+        ORM框架
+		<LinkCard title="文档" href="https://www.osgeo.cn/sqlalchemy/tutorial/index.html" />
+	</Card>
+    <Card title="Celery" icon="seti:notebook">
+        异步任务框架
+		<LinkCard title="文档" href="https://docs.jinkan.org/docs/celery/index.html" />
+	</Card>
+    <Card title="uWSGI" icon="seti:notebook">
+        WSGI web服务器
+		<LinkCard title="文档" href="https://uwsgi-docs-cn.readthedocs.io/zh-cn/latest/index.html" />
+	</Card>
+    <Card title="uvicorn" icon="seti:notebook">
+        ASGI web服务器
+		<LinkCard title="文档" href="https://www.uvicorn.org/" />
+	</Card>
+    <Card title="pytest" icon="seti:notebook">
+        单元测试框架
+		<LinkCard title="文档" href="https://docs.pytest.org/en/stable/" />
+	</Card>
+</CardGrid>
+
+## python项目管理
+<CardGrid>
+    <Card title="Rye" icon="seti:notebook">
+        基于pyproject.toml的项目管理工具  
+        <LinkCard title="文档" href="https://rye.astral.sh/guide/basics/" />
+    </Card>
+    <Card title="poetry" icon="seti:notebook">
+        基于pyproject.toml的项目管理工具  
+        <LinkCard title="文档" href="https://poetry.pythonlang.cn/docs/basic-usage/" />
+    </Card>
+</CardGrid>
+
+## python打包发布
+
+<CardGrid>
+    <Card title="Packaging Python Projects" icon="seti:notebook">
+        使用 pyproject.toml（PEP 518 和 PEP 621 中提出的新配置文件格式）打包发布
+		<LinkCard title="文档" href="https://packaging.python.org/en/latest/tutorials/packaging-projects/" />
+	</Card>
+    <Card title="setuptools" icon="seti:notebook">
+        使用 setuptools 打包发布
+		<LinkCard title="文档" href="https://setuptools.pypa.io/en/latest/userguide/quickstart.html" />
+	</Card>
+</CardGrid>
+
+## python开发者参考
+
+<CardGrid>
+    <Card title="python官方文档" icon="seti:notebook">
+		<LinkCard title="网站" href="https://docs.python.org/zh-cn/3/" />
+	</Card>
+    <Card title="Hitchhiker's Guide to Python" icon="seti:notebook">
+		“Hitchhiker 大神的 Python 指南”，系统梳理并列举了 Python 在各种场景下，对应某个特定库或是某一领域的最优实践方案
+		<LinkCard title="网站" href="https://docs.python-guide.org/" />
+	</Card>
+    <Card title="awesome-python" icon="seti:notebook">
+		python优秀第三方库合集，开发时可以寻找自己所需库，避免重复造轮子
+		<LinkCard title="网站" href="https://github.com/vinta/awesome-python" />
+	</Card>
+</CardGrid>
