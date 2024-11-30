@@ -32,6 +32,7 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: '编程相关', slug: 'tools/programming' },
+						{ label: 'AI工具', slug: 'tools/ai' },
 						{ label: '其他工具', slug: 'tools/tools' },
 					],
 				},
@@ -59,6 +60,13 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'docker', slug: 'devops/docker' },
 						{ label: 'k8s', slug: 'devops/k8s' },
+					],
+				},
+				{
+					label: 'AI学习',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: '大模型学习', slug: 'ai/ai' },
 					],
 				},
 			],
