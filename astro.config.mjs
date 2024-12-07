@@ -69,6 +69,13 @@ export default defineConfig({
 						{ label: '大模型学习', slug: 'ai/ai' },
 					],
 				},
+				{
+					label: '前端学习',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: '学习资料', slug: 'frontend/frontend' },
+					],
+				},
 			],
 			defaultLocale: 'root',
 			locales:{
