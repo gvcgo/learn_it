@@ -76,6 +76,13 @@ export default defineConfig({
 						{ label: '学习资料', slug: 'frontend/frontend' },
 					],
 				},
+				{
+					label: '设计师相关',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: '设计师导航', slug: 'designer/designer' },
+					],
+				},
 			],
 			defaultLocale: 'root',
 			locales:{
